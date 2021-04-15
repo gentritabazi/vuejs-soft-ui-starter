@@ -1,7 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import sidenavComponent from '@/components/Sidenav'
 
 export default {
-    name: 'AdminLayout'
+    name: 'AdminLayout',
+    components: { sidenavComponent },
+    mounted() {
+        document.body.classList.add('g-sidenav-show')
+        document.body.classList.add('bg-gray-100')
+    }
 }
