@@ -7,7 +7,6 @@ export default {
     name: 'AdminLayout',
     components: { sidenavComponent },
     mounted() {
-        document.body.classList.add('g-sidenav-show')
-        document.body.classList.add('bg-gray-100')
+        document.body.classList.add('g-sidenav-show', 'bg-gray-100')
     }
 }
