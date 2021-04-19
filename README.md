@@ -1,11 +1,13 @@
-# VueJs Clean Admin Panel
+### Introduction
 
-**VueJs Clean Admin Panel** is a clean starter project made with Bootstrap 5 in Vue Js.
+This is [Soft UI Dashboard](https://github.com/creativetimofficial/soft-ui-dashboard) in Vue Js.
 
-### Demo
+![preview.png](preview.jpeg)
 
-https://vuejs-clean-admin-panel.netlify.app
+### Installation
 
-### Included
-* vue-router
-* dotenv
+```console
+npm install
+cp .env.example .env
+npm run dev
+```
