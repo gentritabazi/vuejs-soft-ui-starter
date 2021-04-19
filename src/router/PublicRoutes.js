@@ -14,7 +14,8 @@ export default [
     {
         path: '/admin/login',
         component: login ,
-        name: 'admin.login'
+        name: 'admin.login',
+        meta: { guest: true }
     },
 
 ]

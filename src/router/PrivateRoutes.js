@@ -11,6 +11,7 @@ export default [
         component: dashboard,
         name: 'admin.dashboard',
         meta: {
+            auth: true,
             breadCrumb: [
                 { name: 'Dashboard', link: 'admin.dashboard' },
             ]
@@ -23,6 +24,7 @@ export default [
         component: users,
         name: 'admin.users',
         meta: {
+            auth: true,
             breadCrumb: [
                 { name: 'Users', link: 'admin.users' }
             ]
