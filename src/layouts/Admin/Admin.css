@@ -18200,7 +18200,7 @@ p {
     box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
 }
 
-.navbar-vertical.bg-white .navbar-nav .nav-link.active {
+.navbar-vertical.bg-white .navbar-nav .nav-link.router-link-exact-active {
     box-shadow: none;
 }
 
@@ -18208,23 +18208,23 @@ p {
     background-image: linear-gradient(310deg, #e9ecef 0%, #e9ecef 100%);
 }
 
-.navbar-vertical .navbar-nav .nav-link.active {
+.navbar-vertical .navbar-nav .nav-link.router-link-exact-active {
     font-weight: 600;
     box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
     border-radius: 0.5rem;
 }
 
-.navbar-vertical .navbar-nav>.nav-item .nav-link.active {
+.navbar-vertical .navbar-nav>.nav-item .nav-link.router-link-exact-active {
     color: #252f40;
     background-color: #fff;
 }
 
-.navbar-vertical .navbar-nav>.nav-item .nav-link.active .icon {
+.navbar-vertical .navbar-nav>.nav-item .nav-link.router-link-exact-active .icon {
     background-image: linear-gradient(310deg, #cb0c9f 0%, #cb0c9f 100%);
 }
 
-.navbar-vertical .navbar-nav>.nav-item .nav-link.active .icon svg .color-background, .navbar-vertical .navbar-nav>.nav-item .nav-link.active .icon svg .color-foreground {
-    fill: #fff;
+.navbar-vertical .navbar-nav>.nav-item .nav-link.router-link-exact-active .icon i {
+    color: #fff;
 }
 
 .navbar-main {
