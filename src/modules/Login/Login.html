@@ -11,14 +11,13 @@
                 <div class="card-body">
                     <form role="form text-left">
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Email" v-model="email">
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control" placeholder="Password" aria-label="Password"
-                                aria-describedby="password-addon">
+                            <input type="password" class="form-control" placeholder="Password" aria-label="Password" v-model="password">
                         </div>
                         <div class="text-center">
-                            <button type="button" class="btn bg-gradient-dark w-100 my-4 mb-2">Sign in</button>
+                            <button type="button" class="btn bg-gradient-dark w-100 my-4 mb-2" @click="login">Sign in</button>
                         </div>
                         <p class="text-sm mt-3 mb-0 text-center">Don't have an account? <a href="#"
                                 class="text-dark font-weight-bolder">Sign up</a></p>
