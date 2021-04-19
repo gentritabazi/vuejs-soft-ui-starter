@@ -1,5 +1,5 @@
 // Import Modules
-// 
+const login = () => import('@/modules/Login')
 
 // Export
 export default [
@@ -8,6 +8,13 @@ export default [
     {
         path: '/',
         redirect: '/admin/dashboard' 
-    }
+    },
+
+    // Login
+    {
+        path: '/admin/login',
+        component: login ,
+        name: 'admin.login'
+    },
 
 ]
