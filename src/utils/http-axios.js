@@ -47,7 +47,7 @@ service.interceptors.response.use(response => {
             errors = ''
             for (var errorKey in error.response.data.errors) {
                 errors += '\n'
-                errors += error.response.data.errors[errorKey].detail + ''
+                errors += error.response.data.errors[errorKey].detail + '<br>'
             }
         }
 
