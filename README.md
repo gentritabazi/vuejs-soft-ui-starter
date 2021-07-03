@@ -2,6 +2,8 @@
 
 This is [Soft UI Dashboard](https://github.com/creativetimofficial/soft-ui-dashboard) in Vue Js.
 
+The project is helpful to start your next project, as it provides a lot of the common tools you may reach for, all ready to go.
+
 ![preview.png](preview.jpeg)
 
 ### Features
