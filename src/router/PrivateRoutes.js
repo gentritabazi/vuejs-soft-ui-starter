@@ -11,7 +11,7 @@ export default [
         component: dashboard,
         name: 'admin.dashboard',
         meta: {
-            auth: true,
+            // auth: true,
             breadCrumb: [
                 { name: 'Dashboard', link: 'admin.dashboard' },
             ]
