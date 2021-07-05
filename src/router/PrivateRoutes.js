@@ -24,7 +24,7 @@ export default [
         component: users,
         name: 'admin.users',
         meta: {
-            auth: true,
+            // auth: true,
             breadCrumb: [
                 { name: 'Users', link: 'admin.users' }
             ]
