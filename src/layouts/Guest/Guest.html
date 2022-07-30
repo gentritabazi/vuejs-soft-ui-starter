@@ -1,29 +1,31 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 
 <section class="mb-8">
-    <div class="page-header align-items-start section-height-50 pt-5 pb-11 m-3 border-radius-lg"
-        :style="{ backgroundImage: 'url(\'' + require('@/assets/images/curved14.jpg') + '\')' }">
-        <span class="mask bg-gradient-dark opacity-6"></span>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5 text-center mx-auto">
-                    <h1 class="text-white mb-2 mt-5">Welcome!</h1>
-                    <p class="text-lead text-white">Make things easy!</p>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div
+    class="page-header align-items-start section-height-50 pt-5 pb-11 m-3 border-radius-lg"
+    :style="{ backgroundImage: 'url(\'' + require('@/assets/images/curved14.jpg') + '\')' }"
+  >
+    <span class="mask bg-gradient-dark opacity-6"></span>
     <div class="container">
-        <slot />
+      <div class="row justify-content-center">
+        <div class="col-lg-5 text-center mx-auto">
+          <h1 class="text-white mb-2 mt-5">Welcome!</h1>
+          <p class="text-lead text-white">Make things easy!</p>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="container">
+    <slot />
+  </div>
 </section>
 
 <footer class="footer py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-8 mx-auto text-center mt-1">
-                <p class="mb-0 text-secondary">Copyright © {{ (new Date().getFullYear()) }} {{ appName }}.</p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-8 mx-auto text-center mt-1">
+        <p class="mb-0 text-secondary">Copyright © {{ (new Date().getFullYear()) }} {{ appName }}.</p>
+      </div>
     </div>
+  </div>
 </footer>

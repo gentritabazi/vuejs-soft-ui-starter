@@ -1,10 +1,11 @@
-import { appConfig } from '@/config/app.js'
+import AppConfig from '@/config/app.js';
 
 export default {
-    name: 'Sidenav',
-    data() {
-        return {
-            appName: appConfig.APP_NAME
-        }
-    },
-}
+  name: 'Sidenav',
+  
+  data() {
+    return {
+      appName: AppConfig.APP_NAME,
+    };
+  },
+};

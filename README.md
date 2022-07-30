@@ -16,6 +16,10 @@ This project is a starter that helps you start your next project on VueJS, as it
 - Axios Interceptors.
 - [Notifcations](https://github.com/dafcoe/vue-notification).
 
+### Requirements
+
+Node Version: >=14.x.
+
 ### Installation
 
 ```console

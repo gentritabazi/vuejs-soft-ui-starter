@@ -1,18 +1,19 @@
 {
-  "name": "clean-admin-panel",
+  "name": "softui-dashboard",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "code:format": "prettier --write \"src/**/*.{ts,css,js,html}\"",
+    "code:check": "prettier --check \"src/**/*.{ts,css,js,html}\""
   },
   "dependencies": {
     "@dafcoe/vue-notification": "^0.1.5",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.9.2",
     "axios": "^0.21.1",
-    "bootstrap": "^5.0.0-beta3",
+    "bootstrap": "^5.2.0",
     "core-js": "^3.10.2",
     "vue": "^3.0.11",
     "vue-router": "^4.0.6",
@@ -25,7 +26,8 @@
     "@vue/compiler-sfc": "^3.0.11",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.9.0"
+    "eslint-plugin-vue": "^7.9.0",
+    "prettier": "^2.7.1"
   },
   "eslintConfig": {
     "root": true,

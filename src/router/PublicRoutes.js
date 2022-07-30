@@ -1,21 +1,19 @@
 // Import Modules
-const login = () => import('@/modules/Login')
+const login = () => import('@/modules/Login');
 
 // Export
 export default [
+  // Home
+  {
+    path: '/',
+    redirect: '/admin/dashboard',
+  },
 
-    // Home
-    {
-        path: '/',
-        redirect: '/admin/dashboard' 
-    },
-
-    // Login
-    {
-        path: '/admin/login',
-        component: login ,
-        name: 'admin.login',
-        meta: { guest: true }
-    },
-
-]
+  // Login
+  {
+    path: '/admin/login',
+    component: login,
+    name: 'admin.login',
+    meta: { guest: true },
+  },
+];

@@ -1,5 +1,5 @@
-import '@dafcoe/vue-notification/dist/vue-notification.css'
+import '@dafcoe/vue-notification/dist/vue-notification.css';
 
 export default {
-    name: 'Notification'
-}
+  name: 'Notification',
+};
