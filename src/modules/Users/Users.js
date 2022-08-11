@@ -1,9 +1,9 @@
-import adminLayout from '@/layouts/Admin';
+import AdminLayout from '@/layouts/Admin';
 
 export default {
   name: 'Users',
-  
+
   components: {
-    adminLayout,
+    AdminLayout,
   },
 };

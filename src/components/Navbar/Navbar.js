@@ -17,7 +17,7 @@ export default {
       this.updateList();
     },
   },
-  
+
   methods: {
     updateList() {
       this.breadCrumbList = this.$route.meta.breadCrumb;

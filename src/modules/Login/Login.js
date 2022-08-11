@@ -1,5 +1,5 @@
-import guestLayout from '@/layouts/Guest';
-import httpAxios from '@/utils/http-axios';
+import GuestLayout from '@/layouts/Guest';
+import Api from '@/utils/api';
 
 export default {
   name: 'Login',
@@ -12,22 +12,16 @@ export default {
   },
 
   components: {
-    guestLayout,
+    GuestLayout,
   },
 
   methods: {
     login() {
-      const self = this;
+      const response = Api.post('/login', { email: self.email, password: self.password });
 
-      httpAxios({
-        url: '/login',
-        method: 'POST',
-        data: { email: self.email, password: self.password },
-      }).then(async (response) => {
-        self.$store.commit('LOGGED_USER', response.data);
+      self.$store.commit('LOGGED_USER', response.data);
 
-        self.$router.go({ name: 'admin.dashboard' });
-      });
+      self.$router.go({ name: 'admin.dashboard' });
     },
   },
 };

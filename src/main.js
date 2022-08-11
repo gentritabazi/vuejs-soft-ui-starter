@@ -1,7 +1,13 @@
 import { createApp } from 'vue';
 import App from './modules/App/index.vue';
-import router from './router';
-import store from './store';
-import VueNotificationList from '@dafcoe/vue-notification';
+import Router from './router';
+import Store from './store';
+import VueNotification from '@dafcoe/vue-notification';
 
-createApp(App).use(router).use(store).use(VueNotificationList).mount('#app');
+const app = createApp(App);
+
+app.use(Router);
+app.use(Store);
+app.use(VueNotification);
+
+app.mount('#app');
